@@ -1,0 +1,36 @@
+/**
+ * Tone colors for light/day theme
+ */
+.tone {}
+.tone-1 { color: #e30000; }
+.tone-2 { color: #02b31c; }
+.tone-3 { color: #1510f0; }
+.tone-4 { color: #8900bf; }
+.tone-5 { color: #777777; }
+
+/**
+ * Tone colors for dark/night theme
+ */
+.card.nightMode .tone { }
+.card.nightMode .tone-1 { color: #ff8080; }
+.card.nightMode .tone-2 { color: #80ff80; }
+.card.nightMode .tone-3 { color: #8080ff; }
+.card.nightMode .tone-4 { color: #df80ff; }
+.card.nightMode .tone-5 { color: #c6c6c6; }
+
+.card {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+div > span {
+    vertical-align: middle;
+}
+
+#ddzw-hanzi {
+    font-size: 50px;
+}
+
