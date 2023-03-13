@@ -8,6 +8,7 @@ This is an Anki deck to review vocabulary from the textbook 當代中文課程 a
 * Proper Taiwanese-style characters rendering (using html lang tags)
 * Colored Hanzi according to tones (generated at run time, so it works for any new card too)
   * You can change the colors by editing the card CSS and replacing the [color codes](https://en.wikipedia.org/wiki/Web_colors)
+* Includes part of speech (noun, verb, measure word…)
 * Two types of cards:
   * hanzi+english → pinyin
   * pinyin+english → hanzi
