@@ -2,6 +2,9 @@
 
 This is an Anki deck to review vocabulary from the textbook 當代中文課程 aka. A Course in Contemporary Chinese. It is based on the [data from Kevin Lang](https://github.com/kevinlang/ccc-flashcards).
 
+![Sample question screenshot](question.png)
+![Sample answer screenshot](answer.png)
+
 ## Features
 
 * Contains all the vocabulary from book 1 to book 6 lesson 1
