@@ -65,7 +65,12 @@ def compile_deck(output_file):
   add_notes(my_deck, my_model, 'ccc.tsv')
   genanki.Package(my_deck).write_to_file(output_file)
 
-try:
-  compile_deck(argv[1])
-except IndexError:
-  print(f"Usage: {argv[0]} <output_deck.apkg>")
+def run():
+  try:
+    output_file = argv[1]
+  except IndexError:
+    print(f"Usage: {argv[0]} <output_deck.apkg>")
+  else:
+    compile_deck(output_file)
+
+run()
