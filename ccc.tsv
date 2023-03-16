@@ -3388,7 +3388,7 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 全民	quánmín	all the people	N	B5L04-I	
 座	zuò	measure for large objects like mountains, castles, gigantic temples on hilltops	M	B5L04-I	
 鬥牛場	dòuniú chǎng	bullfighting ring	N	B5L04-I	
-馬德里	Mǎdélǐ	Madrid	N	B5L04-I	
+馬德里	Mǎdélǐ	Madrid	N	B5L04-I	Place
 至今	zhìjīn	to this day, heretofore	Adv	B5L04-I	
 鬥牛士	dòuniú shì	bullfighter	N	B5L04-I	
 華麗	huálì	magnificent, resplendent	Vs	B5L04-I	
@@ -3420,7 +3420,7 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 諾貝爾	"Nuòbèi'ěr'"	Nobel	N	B5L04-I	
 得主	dézhǔ	winner	N	B5L04-I	
 作家	zuòjiā	writer, author	N	B5L04-I	
-海明威	Hǎimíngwēi	Ernest Hemmingway	N	B5L04-I	
+海明威	Hǎimíngwēi	Ernest Hemmingway	N	B5L04-I	People
 觀看	guānkàn	to watch	V	B5L04-I	
 小說	xiǎoshuō	novel	N	B5L04-I	
 舉世聞名	jǔshì wénmíng	world-famous	Id	B5L04-I	
@@ -3459,7 +3459,7 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 高達	gāodá	as high as	Vst	B5L04-II	
 僅	jǐn	only	Adv	B5L04-II	
 無須	wúxū	need not	Vaux	B5L04-II	
-巴塞隆納	Bāsàilóngnà	Barcelona	N	B5L04-II	
+巴塞隆納	Bāsàilóngnà	Barcelona	N	B5L04-II	Place
 宣布	xuānbù	to announce	V	B5L04-II	
 娛樂	yúlè	recreation, amusement, entertainment	N	B5L04-II	
 入場	rùchǎng	to enter (a venue)	Vi	B5L04-II	
@@ -3686,7 +3686,7 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 提心吊膽	tíxīn diàodǎn	on tenterhooks, nervous	Id	B5L07-I	
 警力	jǐnglì	police force	N	B5L07-I	
 治安	"zhì'ān'"	public security	N	B5L07-I	
-哈佛大學	Hāfó Dàxué	Harvard University	N	B5L07-II	
+哈佛大學	Hāfó Dàxué	Harvard University	N	B5L07-II	Place
 課堂	kètáng	classroom	N	B5L07-II	
 心臟	xīnzàng	heart (organ)	N	B5L07-II	
 肺臟	fèizàng	lung	N	B5L07-II	
@@ -3759,7 +3759,7 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 消除	xiāochú	to eliminate	V	B5L08-I	
 仇外	chóuwài	anti-foreign	Vs	B5L08-I	
 前...	qián...	former-, ex-	N	B5L08-I	
-歐巴馬	Ōubāmǎ	Barack Obama (former US president)	N	B5L08-I	
+歐巴馬	Ōubāmǎ	Barack Obama (former US president)	N	B5L08-I	People
 會議	huìyì	conference, meeting	N	B5L08-I	
 主義	zhǔyì	“-ism” (as in terrorism, communism)	N	B5L08-I	
 受害者	shòuhàizhě	victim	N	B5L08-I	
@@ -3772,7 +3772,7 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 或許	huòxǔ	perhaps, probably	Adv	B5L08-I	
 勞動力	láodònglì	manpower	N	B5L08-I	
 轉化	zhuǎnhuà	to change into, transform into	Vi	B5L08-I	
-里約	Lǐyuē	Rio, Brasil	N	B5L08-I	
+里約	Lǐyuē	Rio, Brasil	N	B5L08-I	Place
 奧運	Àoyùn	Olympics	N	B5L08-I	
 首度	shǒudù	first time	Adv	B5L08-I	
 代表隊	dàibiǎoduì	representative team, team representing	N	B5L08-I	
@@ -3782,7 +3782,7 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 忘掉	wàngdiào	to forget	Vpt	B5L08-I	
 英雄	yīngxióng	hero	N	B5L08-I	
 身分	shēnfèn	identification	N	B5L08-I	
-索馬利亞	Suǒmǎlìyǎ	Somalia	N	B5L08-I	
+索馬利亞	Suǒmǎlìyǎ	Somalia	N	B5L08-I	Place
 之後	zhīhòu	subsequent to that	N	B5L08-I	
 參選	cānxuǎn	to run in an election	V	B5L08-I	
 膚色	fūsè	skin color	N	B5L08-I	
@@ -3797,7 +3797,7 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 居民	jūmín	resident	N	B5L08-II	
 對立	duìlì	to oppose, be in opposition to, be antagonistic	Vs	B5L08-II	
 罷了	bàle	"merely, that's it, that is all"	Ptc	B5L08-II	
-德國	Déguó	Germany	N	B5L08-II	
+德國	Déguó	Germany	N	B5L08-II	Place
 每況愈下	měikuàng yùxià	to deteriorate, go downhill, go from bad to worse	Id	B5L08-II	
 拖垮	tuōkuǎ	to pull down with, drag down	V	B5L08-II	
 忽略	hūlüè	to ignore, overlook	V	B5L08-II	
@@ -3819,7 +3819,7 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 助長	zhùzhǎng	to foster, encourage (negatively)	V	B5L08-II	
 支付	zhīfù	to make a payment to	V	B5L08-II	
 總理	zǒnglǐ	chancellor, prime minister, premier	N	B5L08-II	
-梅克爾	"Méikè'ěr'"	Merkel (German chancellor)	N	B5L08-II	
+梅克爾	"Méikè'ěr'"	Merkel (German chancellor)	N	B5L08-II	People
 承認	chéngrèn	to admit, confess	V	B5L08-II	
 低估	dīgū	to underestimate	V	B5L08-II	
 和平	hépíng	peaceful; peace	Vs/N	B5L08-II	
@@ -3837,10 +3837,10 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 致命	zhìmìng	lethal, fatal	Vs	B5L09-I	
 退燒	tuìshāo	to reduce fever, wane	Vp	B5L09-I	
 行之有年	xíngzhī yǒunián	in use for years, long-established	Id	B5L09-I	
-三哩島	Sānlǐdǎo	Three Mile Island, PA, USA	N	B5L09-I	
-烏克蘭	Wūkèlán	Ukraine	N	B5L09-I	
-車諾比	Chēnuòbǐ	Chernobyl	N	B5L09-I	
-福島	Fúdǎo	Fukushima	N	B5L09-I	
+三哩島	Sānlǐdǎo	Three Mile Island, PA, USA	N	B5L09-I	Place
+烏克蘭	Wūkèlán	Ukraine	N	B5L09-I	Place
+車諾比	Chēnuòbǐ	Chernobyl	N	B5L09-I	Place
+福島	Fúdǎo	Fukushima	N	B5L09-I	Place
 核災	hézāi	nuclear disaster	N	B5L09-I	
 核電	hédiàn	nuclear power	N	B5L09-I	
 列為	lièwéi	to be ranked as, listed as	Vst	B5L09-I	
@@ -3987,8 +3987,8 @@ X 分之 Y	X fēn zhī Y	pattern for indicating percentages or fractions		B3L08-
 形式	xíngshì	form	N	B5L10-II	
 亂倫	luànlún	incest	N	B5L10-II	
 不倫	bùlún	immorality	N	B5L10-II	
-白宮	Báigōng	White House	N	B5L10-II	
-巴黎鐵塔	Bālí Tiětǎ	Eiffel Tower	Ph	B5L10-II	
+白宮	Báigōng	White House	N	B5L10-II	Place
+巴黎鐵塔	Bālí Tiětǎ	Eiffel Tower	Ph	B5L10-II	Place
 打上	dǎshàng	to shine up on	V	B5L10-II	
 燈光	dēngguāng	lights	N	B5L10-II	
 不容忽視	bùróng hūshì	cannot ignore, should not be ignored	Id	B5L10-II	
