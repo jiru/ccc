@@ -8,13 +8,14 @@ This is an Anki deck to review vocabulary from the textbook 當代中文課程 a
 ## Features
 
 * Contains all the vocabulary from book 1 to book 6 lesson 1
+* Every card has audio [as pronunced by the authors of the book](http://mtc.ntnu.edu.tw/chinese-resource.htm)
 * Proper Taiwanese-style characters rendering (using html lang tags)
 * Colored Hanzi according to tones (generated at run time, so it works for any new card too)
   * You can change the colors by editing the card CSS and replacing the [color codes](https://en.wikipedia.org/wiki/Web_colors)
 * Includes part of speech (noun, verb, measure word…)
 * Two types of cards:
-  * hanzi+english → pinyin
-  * pinyin+english → hanzi
+  * hanzi+english → pinyin+audio
+  * pinyin+english+audio → hanzi
 * People and place names tagged
 * Lesson number included to easily search cards from a specific lesson or book:
   * Search for `B1L5-I` to get the dialog from lesson 5, book 1
@@ -27,9 +28,14 @@ This is an Anki deck to review vocabulary from the textbook 當代中文課程 a
 
 First install [genanki](https://github.com/kerrickstaley/genanki), and then run:
 ```
+./build.sh output.apkg
+```
+It will download the audio, process it and generate the deck into a file `output.apkg`.
+
+If you don't want the audio, just run:
+```
 ./generate_deck.py output.apkg
 ```
-It will generate the deck into a file `output.apkg`.
 
 ## How to use
 
