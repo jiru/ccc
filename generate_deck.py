@@ -57,6 +57,24 @@ def add_notes(deck, model, tsv_file, audios_all_books):
         print(f"Error parsing '{tsv_file}' at line {line}")
         exit(1)
 
+      if 'V' in row[3]:
+        tags.append("Verb")
+      if 'N' in row[3]:
+        tags.append("Noun")
+      if 'M' in row[3]:
+        tags.append("Measure-word")
+      if 'Adv' in row[3]:
+        tags.append("Adverb")
+      if 'Ptc' in row[3]:
+        tags.append("Particle")
+      if 'Conj' in row[3]:
+        tags.append("Conjunction")
+      if 'Prep' in row[3]:
+        tags.append("Preposition")
+      tags.append(lesson[0:2]) # Book number
+      tags.append(lesson[0:5]) # Lesson number
+      tags.append(lesson) # Lesson number with sublesson
+
       try:
         audio = audios_by_lesson[lesson].pop(0)
         added_audios.append(audio)

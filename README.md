@@ -12,16 +12,16 @@ This is an Anki deck to review vocabulary from the textbook 當代中文課程 a
 * Proper Taiwanese-style characters rendering (using html lang tags)
 * Colored Hanzi according to tones (generated at run time, so it works for any new card too)
   * You can change the colors by editing the card CSS and replacing the [color codes](https://en.wikipedia.org/wiki/Web_colors)
-* Includes part of speech (noun, verb, measure word…)
+* Includes part of speech (noun, verb, measure word…) both displayed on cards and as tags
 * Two types of cards:
   * hanzi+english → pinyin+audio
   * pinyin+english+audio → hanzi
 * People and place names tagged
-* Lesson number included to easily search cards from a specific lesson or book:
-  * Search for `B1L5-I` to get the dialog from lesson 5, book 1
-  * Search for `B3L10-II` to get the text from lesson 10, book 2
-  * Search for `B3L1-` to get all the lesson 1 from book 3
-  * Search for `B4L` to get all the book 4
+* Lesson numbers included as tags to easily search cards from a specific lesson or book:
+  * Filter by tag `B1L5-I` to get the dialog (對話) from lesson 5, book 1
+  * Filter by tag `B3L10-II` to get the text (短文) from lesson 10, book 3
+  * Filter by tag `B3L1` to get all the lesson 1 from book 3
+  * Filter by tag `B4` to get all the book 4
   * This way you can suspend or reschedule cards according to which lesson you start from
 
 ## How to compile
