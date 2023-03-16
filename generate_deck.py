@@ -12,8 +12,10 @@ model_id = 1858604882
 class CCCNote(genanki.Note):
   @property
   def guid(self):
-    # Use hanzi + part of speech as unique identifier
-    return genanki.guid_for(self.fields[0], self.fields[3])
+    # Use hanzi + part of speech + lesson as unique identifier.
+    # Because there are some (hanzi, part of speech) duplicates,
+    # and some (hanzi + lesson) duplicates, too
+    return genanki.guid_for(self.fields[0], self.fields[3], self.fields[4])
 
 def read_file(file):
   with open(file, 'r') as f:
