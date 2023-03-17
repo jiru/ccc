@@ -71,9 +71,8 @@ def add_notes(deck, model, tsv_file, audios_all_books):
         tags.append("Conjunction")
       if 'Prep' in row[3]:
         tags.append("Preposition")
-      tags.append(lesson[0:2]) # Book number
-      tags.append(lesson[0:5]) # Lesson number
-      tags.append(lesson) # Lesson number with sublesson
+      tags.append("Book-" + lesson[1:1])
+      tags.append("Lesson-" + lesson[3:])
 
       try:
         audio = audios_by_lesson[lesson].pop(0)
