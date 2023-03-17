@@ -6,10 +6,14 @@ from sys import argv
 from optparse import OptionParser
 from glob import glob
 from os.path import basename
+import os
+import sqlite3
+import zipfile
 
 # Pseudorandom IDs generated using
 # import random; random.randrange(1 << 30, 1 << 31)
-deck_id = 1727536177
+pinyin_deck_id = 1727536177
+pinyin_hanzi_id = 1883864453
 model_id = 1858604882
 
 class CCCNote(genanki.Note):
@@ -133,14 +137,41 @@ def gen_model(audios_all_books):
     css=read_file('tmpl.css'),
   )
 
-def compile_deck(output_file, audios_all_books):
-  my_deck = genanki.Deck(deck_id, '當代中文課程')
-  my_model = gen_model(audios_all_books)
-  added_audios = add_notes(my_deck, my_model, 'ccc.tsv', audios_all_books)
+def assign_reverse_cards_to_deck_from_ankicol(ankicol_file, deck_id):
+  con = sqlite3.connect(ankicol_file)
+  cur = con.cursor()
+  cur.execute(f"update cards set did = {deck_id} where ord = 1")
+  con.commit()
+  con.close()
 
-  my_package = genanki.Package(my_deck)
+def assign_reverse_cards_to_deck(apkg_file, deck_id):
+  new_apkg_file = apkg_file + '.tmp'
+  with zipfile.ZipFile(apkg_file, 'r') as apkg, zipfile.ZipFile(new_apkg_file, 'w') as new_apkg:
+    for apkg_info_file in apkg.infolist():
+      with apkg.open(apkg_info_file) as apkg_info:
+        file_contents = apkg_info.read()
+        if apkg_info.name == 'collection.anki2':
+          tmp_ankicol_file = './' + apkg_info.name
+          with open(tmp_ankicol_file, 'wb') as tmp_ankicol:
+            tmp_ankicol.write(file_contents)
+          assign_reverse_cards_to_deck_from_ankicol(tmp_ankicol_file, deck_id)
+          with open(tmp_ankicol_file, 'rb') as tmp_ankicol:
+            new_apkg.writestr(apkg_info.name, tmp_ankicol.read())
+          os.remove(tmp_ankicol_file)
+        else:
+          new_apkg.writestr(apkg_info.name, file_contents)
+  os.replace(new_apkg_file, apkg_file)
+
+def compile_deck(output_file, audios_all_books):
+  my_pinyin_deck = genanki.Deck(pinyin_deck_id, '當代中文課程::拼音')
+  my_hanzi_deck = genanki.Deck(pinyin_hanzi_id, '當代中文課程::漢字')
+  my_model = gen_model(audios_all_books)
+  added_audios = add_notes(my_pinyin_deck, my_model, 'ccc.tsv', audios_all_books)
+
+  my_package = genanki.Package([my_pinyin_deck, my_hanzi_deck])
   my_package.media_files = added_audios
   my_package.write_to_file(output_file)
+  assign_reverse_cards_to_deck(output_file, pinyin_hanzi_id)
 
 def run():
   total_books = 6
