@@ -18,10 +18,10 @@ This is an Anki deck to review vocabulary from the textbook 當代中文課程 a
   * pinyin+english+audio → hanzi
 * People and place names tagged
 * Lesson numbers included as tags to easily search cards from a specific lesson or book:
-  * Filter by tag `B1L5-I` to get the dialog (對話) from lesson 5, book 1
-  * Filter by tag `B3L10-II` to get the text (短文) from lesson 10, book 3
-  * Filter by tag `B3L1` to get all the lesson 1 from book 3
-  * Filter by tag `B4` to get all the book 4
+  * Filter by tags `Book-1` and `Lesson-5-I` to get the dialog (對話) from lesson 5, book 1
+  * Filter by tags `Book-3` and `Lesson-10-II` to get the text (短文) from lesson 10, book 3
+  * Filter by tags `Book-3`, `Lesson-2-I` and `Lesson-2-II` to get all the lesson 2 from book 3
+  * Filter by tag `Book-4` to get all the book 4
   * This way you can suspend or reschedule cards according to which lesson you start from
 
 ## How to compile
