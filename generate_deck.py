@@ -5,7 +5,6 @@ import csv
 from sys import argv
 from optparse import OptionParser
 from glob import glob
-from os.path import basename
 import os
 import sqlite3
 import zipfile
@@ -88,7 +87,7 @@ def add_notes(deck, model, tsv_file, audios_all_books):
       try:
         audio = audios_by_lesson[lesson].pop(0)
         added_audios.append(audio)
-        audio = basename(audio)
+        audio = os.path.basename(audio)
         fields[5] = f"[sound:{audio}]"
       except IndexError:
         print(f"Warning: missing audio for lesson {lesson}, vocab {row[0:3]}")
