@@ -65,6 +65,7 @@ def add_notes(deck, model, tsv_file, audios_all_books):
     book = book + 1
 
   added_audios = []
+  added_lessons = {}
   with open(tsv_file) as ccc:
     deckreader = csv.reader(ccc, delimiter='\t')
     for row in deckreader:
@@ -90,11 +91,12 @@ def add_notes(deck, model, tsv_file, audios_all_books):
       except KeyError:
         pass
 
+      added_lessons[lesson] = None
       note = CCCNote(model=model, fields=fields, tags=tags)
       deck.add_note(note)
 
-  for lesson in audios_by_lesson:
-    if (len(audios_by_lesson[lesson]) > 0):
+  for lesson in added_lessons.keys():
+    if (lesson in audios_by_lesson and len(audios_by_lesson[lesson]) > 0):
       print(f"Warning: unassigned audios for lesson {lesson}:")
       for audio in audios_by_lesson[lesson]:
         print("  " + audio)
