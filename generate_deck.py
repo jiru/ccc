@@ -29,6 +29,26 @@ def sorted_glob(pattern):
   result.sort()
   return result
 
+def add_pos_tags(tags, pos):
+  if 'V' in pos:
+    tags.append("Verb")
+  if 'N' in pos:
+    tags.append("Noun")
+  if 'M' in pos:
+    tags.append("Measure-word")
+  if 'Adv' in pos:
+    tags.append("Adverb")
+  if 'Ptc' in pos:
+    tags.append("Particle")
+  if 'Conj' in pos:
+    tags.append("Conjunction")
+  if 'Prep' in pos:
+    tags.append("Preposition")
+
+def add_lesson_tags(tags, lesson):
+   tags.append("Book-" + lesson[1:2])
+   tags.append("Lesson-" + lesson[3:])
+
 def add_notes(deck, model, tsv_file, audios_all_books):
   audios_by_lesson = {}
   book = 1
@@ -57,22 +77,8 @@ def add_notes(deck, model, tsv_file, audios_all_books):
         print(f"Error parsing '{tsv_file}' at line {line}")
         exit(1)
 
-      if 'V' in row[3]:
-        tags.append("Verb")
-      if 'N' in row[3]:
-        tags.append("Noun")
-      if 'M' in row[3]:
-        tags.append("Measure-word")
-      if 'Adv' in row[3]:
-        tags.append("Adverb")
-      if 'Ptc' in row[3]:
-        tags.append("Particle")
-      if 'Conj' in row[3]:
-        tags.append("Conjunction")
-      if 'Prep' in row[3]:
-        tags.append("Preposition")
-      tags.append("Book-" + lesson[1:1])
-      tags.append("Lesson-" + lesson[3:])
+      add_pos_tags(tags, row[3])
+      add_lesson_tags(tags, lesson)
 
       try:
         audio = audios_by_lesson[lesson].pop(0)
