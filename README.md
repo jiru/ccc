@@ -39,4 +39,6 @@ If you don't want the audio, just run:
 
 ## How to use
 
-Either generate the deck using the instructions above or download the latest release, and then import the apkg file into Anki.
+Either generate the deck using the instructions above or download the [latest release](https://github.com/jiru/ccc/releases/latest), and then import the apkg file into Anki.
+
+Alternatively, you can also [download this deck from Ankiweb](https://ankiweb.net/shared/info/2118503187).
