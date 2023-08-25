@@ -2,6 +2,7 @@ c = require('./colorize_hanzi.js');
 
 fixtures = [
   ["推薦信",         "tuījiànxìn",             [1, 4, 4]],
+  ["軟體",           "ruǎntǐ",                 [3, 3]],
 ];
 
 let passed = 0, total = 0;
