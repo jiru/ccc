@@ -2,7 +2,7 @@
 // of hanzi according to pinyin tones.
 // You can change the colors in the CSS
 
-function colorHanzi(hanziElem, pinyin) {
+function colorHanzi(html, hanzi, pinyin) {
   function getTones(pinyin) {
     function getToneNumber(diac) {
       var allDiacs = ['āēīōūǖ','áéíóúǘ','ǎěǐǒǔǚ','àèìòùǜ','aeiouür'];
@@ -126,7 +126,6 @@ function colorHanzi(hanziElem, pinyin) {
   pinyin = pinyin.toLowerCase();
   var tones = getTones(pinyin);
 
-  var hanzi = hanziElem.textContent;
   hanzi = hanzi.normalize();
   // \p{Han} according to ftp://ftp.unicode.org/Public/UNIDATA/Scripts.txt (only codepoints lower than U+FFFF)
   const Han = '\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3005\u3007\u3021-\u3029\u3038-\u303A\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9';
@@ -134,7 +133,7 @@ function colorHanzi(hanziElem, pinyin) {
   const re = new RegExp(hanziRe, 'gu');
   var memory = {};
   var n = 0;
-  hanziElem.innerHTML = hanziElem.innerHTML.replace(re, function (match) {
+  return html.replace(re, function (match) {
     if (match == '/') {
       n = 0;
       return match;
@@ -162,7 +161,7 @@ function colorFlashCard() {
   if (!hanziElem)
     return;
 
-  colorHanzi(hanziElem, pinyin.innerText);
+  hanziElem.innerHTML = colorHanzi(hanziElem.innerHTML, hanziElem.textContent, pinyin.innerText);
 }
 
 colorFlashCard();
