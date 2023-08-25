@@ -164,4 +164,13 @@ function colorFlashCard() {
   hanziElem.innerHTML = colorHanzi(hanziElem.innerHTML, hanziElem.textContent, pinyin.innerText);
 }
 
-colorFlashCard();
+try {
+  module.exports = {
+    colorHanzi: colorHanzi
+  }
+} catch (e) {
+}
+
+if (typeof require === 'undefined' || typeof require.main === 'undefined') {
+  colorFlashCard();
+}
