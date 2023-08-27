@@ -5,4 +5,25 @@
 <span lang="en" id="ddzw-pinyin">{{Pinyin}}</span>
 {{Audio}}
 <br><br>
-{{English}}
+<span id="ddrw-english">{{English}}</span>
+
+<script>
+function markHanzis(text, cls) {
+  // \p{Han} according to ftp://ftp.unicode.org/Public/UNIDATA/Scripts.txt (only codepoints lower than U+FFFF)
+  const Han = '\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u3005\u3007\u3021-\u3029\u3038-\u303A\u303B\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFA6D\uFA70-\uFAD9';
+  const hanziRe = '['+Han+']';
+  const re = new RegExp(hanziRe, 'gu');
+  return text.replace(re, function (match) {
+    return '<span class="'+cls+'">' + match + '</span>';
+  });
+}
+
+var englishElem = document.getElementById("ddrw-english");
+englishElem.innerHTML = markHanzis(englishElem.innerHTML, 'hanzi-in-front');
+</script>
+
+<style>
+.hanzi-in-front {
+  color: transparent;
+}
+</style>
